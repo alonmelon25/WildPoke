@@ -1,0 +1,57 @@
+body{
+	background: #203146;
+	color: white;
+	size: 150%;
+	margin: 5%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.current{
+	display: flex;
+	color: #000000;
+	background: #203146;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.current .nav_logo{
+	margin-left: 20px;
+}
+
+.current a{
+	color: white;
+	padding: 10px;
+}
+
+.current li:first-child{
+	margin-right: auto;
+}
+
+.home_logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p{
+	text-align: center;
+}
+
+.skip{
+	color: white;
+	position: relative;
+}
+
+.social_media{
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social_media a{
+	padding: 5px;
+}
