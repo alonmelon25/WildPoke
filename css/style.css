@@ -1,44 +1,54 @@
 /* CSS Variables */
 :root{
 	--background-color: #203146;
+	--color: white;
 	--hover-color: #d90303;
 	--font-size: 16px;
 	--font-family: 'Lato';
 }
 
-
+/* Style */
 body, html{
+	background-color: var(--background-color);
+	/* background-image: url("..images/logo_blue.png"); */
+	color: var(--color);
 	font-family: var(--font-family);
-	background-color: #203146;
-	background-image: url("..images/logo_blue.png");
-	color: white;
-	size: 150%;
-	margin: 5%;
+	font-size: var(--font-size, 16px);
+	font-weight: 400;
+	margin: 2%;
 }
 
 h1{
-	font-family: 'Lato';
-	font-size: 48px;
+	font-family: var(--font-family);
+	font-size: 3rem;
 	text-align: center;
 }
 
 h2{
 	color: red;
-	font-family: 'Lato';
-	font-size: 36px;
+	font-family: var(--font-family);
+	font-size: 2.25rem;
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
 }
 
 h3{
-	font-family: 'Lato';
-	font-size: 24px;
+	font-family: var(--font-family);
+	font-size: 1.5rem;
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
 }
 
+p{
+	font-family: var(--font-family);
+	font-size: 1rem;
+	text-align: center;
+	padding-bottom: 1.25rem;
+}
+
+/* Header */
 .skip{
-	color: white;
+	color: var(--color);
 	position: absolute;
 	overflow: hidden;
 	left: -9999px;
@@ -61,17 +71,20 @@ h3{
 } */
 
 .nav a{
+	background-color: var(--background-color);
+	color: var(--color);
 	display: block;
-	color: white;
-	background: #203146;
-	text-align: center;
-	font-size: 150%;
 	padding: 10px;
+	text-align: center;
 	text-decoration: none;
 }
 
+.nav a.current{
+	text-decoration: underline;
+}
+
 .nav a:hover{
-	background-color: #d90303;
+	background-color: var(--hover-color);
 }
 
 .nav li:first-child{
@@ -83,20 +96,10 @@ h3{
 	width: 40px;
 }
 
-.nav a.current{
-	text-decoration: underline;
-}
-
 .home_logo{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-p{
-	font-family: 'Lato';
-	text-align: center;
-	padding-bottom: 20px;
 }
 
 .social_media{
@@ -109,7 +112,7 @@ p{
 }
 
 .social_media .social_media_logo{
-	color: white;
+	color: var(--color);
 }
 
 .container{
@@ -122,7 +125,7 @@ p{
 
 .container img{
 	height: 250px;
-	width: 250px;
+	width: 100%;
 }
 
 iframe{
@@ -145,13 +148,43 @@ iframe{
 	grid-template-columns: 1fr 1fr 2fr;
 }
 
+.contact{
+	text-align: center;
+}
+
+.name{
+	height: 1.5rem;
+	width: 600px;
+}
+
+.email{
+	height: 1.5rem;
+	width: 600px;
+}
+
+.subject{
+	height: 1.5rem;
+	width: 600px;
+}
+
+.message{
+	height: 100px;
+	width: 600px;
+}
+
 @media screen and (orientation: portrait){
+	/* body, html{
+		font-size: 20px;
+	} */
 	.menu p{
 		text-align: left;
 	}
+	.container{
+			grid-template-columns: auto auto;
+	}
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 768px){
 	.skip{
 		padding: 6px;
 		position: absolute;
@@ -173,7 +206,7 @@ iframe{
 	}
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1024px){
 	nav ul{
 		display: flex;
 		justify-content: flex-end;
