@@ -100,6 +100,7 @@ p{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	width: 300px;
 }
 
 .social_media{
@@ -131,6 +132,7 @@ p{
 iframe{
 	height: 450px;
 	width: 100%;
+	padding-bottom: 1.25rem;
 }
 
 .menu h3{
@@ -152,30 +154,40 @@ iframe{
 	text-align: center;
 }
 
+.contact li{
+	padding-bottom: 1.5rem;
+}
+
+label{
+	display: inline-block;
+	text-align: end;
+	width: 8%;
+}
+
 .name{
 	height: 1.5rem;
-	width: 600px;
+	width: 50%;
 }
 
 .email{
 	height: 1.5rem;
-	width: 600px;
+	width: 50%;
 }
 
 .subject{
 	height: 1.5rem;
-	width: 600px;
+	width: 50%;
 }
 
 .message{
 	height: 100px;
-	width: 600px;
+	width: 50%;
 }
 
 @media screen and (orientation: portrait){
-	/* body, html{
-		font-size: 20px;
-	} */
+	body, html{
+		font-size: 24px;
+	}
 	.menu p{
 		text-align: left;
 	}
@@ -213,6 +225,6 @@ iframe{
 	}
 	nav ul li{
 		display: inline-block;
-		background: #203146;
+		background: var(--background-color);
 	}
 }
