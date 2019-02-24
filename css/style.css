@@ -137,12 +137,10 @@ iframe{
 
 .menu h3{
 	text-align: center;
-	padding-right: 30px;
 }
 
 .menu p{
 	text-align: justify;
-	padding-left: 30px;
 }
 
 .items{
@@ -185,9 +183,9 @@ label{
 }
 
 @media screen and (orientation: portrait){
-	body, html{
+	/* body, html{
 		font-size: 24px;
-	}
+	} */
 	.menu p{
 		text-align: left;
 	}
